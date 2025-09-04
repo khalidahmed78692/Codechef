@@ -10,24 +10,22 @@ void solve()
     cin >> n >> m;
     if (n == 0)
     {
-        cout << ">";
         while (m-- > 2)
-            cout << "<>";
-        cout << "=>";
+            cout << "><";
+        cout << ">=>";
     }
     else if (m == 0)
     {
-        cout << '<';
         while (n-- > 2)
             cout << "<<";
-        cout << "=<";
+        cout << "<=<";
     }
     else
     {
-        cout << '<';
-        while (n--)
-            cout << '<';
-        while (m--)
+        while (n-- > 1)
+            cout << "<<";
+        cout << "<<>";
+        while (m-- > 1)
             cout << "<>";
     }
     cout << endl;
